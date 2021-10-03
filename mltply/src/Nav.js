@@ -9,11 +9,11 @@ function Nav() {
         <nav>
             <a href="/"><img src={logo} className="logo" /></a>
             <ul className="nav-links">
-                <li><Link  to="companies" spy={true} smooth={true}>Companies</Link></li>
+                {/* <li><Link  to="companies" spy={true} smooth={true}>Companies</Link></li>
                 <li><Link  to="team" spy={true} smooth={true}>Team</Link></li>
                 <li><Link  to="contact" spy={true} smooth={true}>Blog</Link></li>
                 <li><Link  to="service" spy={true} smooth={true}>Agency</Link></li>
-                <li><Link  to="home" spy={true} smooth={true}>Contact Us</Link></li>
+                <li><Link  to="home" spy={true} smooth={true}>Contact Us</Link></li> */}
                 <LinkTo to="apply"><li  className="apply-link">Apply</li></LinkTo>
             </ul>
         </nav>

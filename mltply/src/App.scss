@@ -12,6 +12,10 @@ nav {
     display: flex;
     margin-left: 81px;
     cursor: pointer;
+
+    @media (max-width: 375px) {
+      margin-left: 45px;
+    }
   }
 
   .nav-links {
@@ -35,10 +39,15 @@ nav {
       cursor: pointer;
     }
 
-    .apply-link {
+    a {
+      text-decoration: none;
+    }
+
+    .apply-link, .apply-link:active, .apply-link:link, .apply-link:visited {
       color: #f64480;
-      font-family: "Helvetica - Bold";
-      font-weight: 700;
+      font-family: Helvetica;
+      font-size: 18px;
+      font-weight: 600;
       font-style: normal;
       letter-spacing: normal;
       line-height: normal;
@@ -64,6 +73,10 @@ nav {
 .apply-sections {
   display: flex;
   flex-direction: column;
+
+  a {
+    text-decoration: none;
+  }
 
   .apply-section-coloured {
     display: flex;
@@ -113,7 +126,11 @@ nav {
       letter-spacing: normal;
       line-height: normal;
       text-align: left;
+      text-align: justify;
+      text-justify: inter-word;
     }
+
+    
 
     .get-funded {
       margin-top: 51px;
@@ -123,6 +140,7 @@ nav {
       border-radius: 30px;
       background-color: #e22f6b;
       color: #ffffff;
+      cursor: pointer;
 
       .txt {
         width: 114px;
@@ -191,7 +209,9 @@ nav {
       height: 1000px;
 
       top: 50px !important;
-      left: 61% !important;
+      left: 62% !important;
+
+      
     }
 
     .intro-p {
@@ -215,7 +235,9 @@ nav {
 
     .title {
       /* Style for "Companies" */
+      width: 100%;
       margin-top: 171px;
+      margin-bottom: 50px;
       height: 55px;
       color: #252b38;
       font-family: Helvetica;
@@ -245,11 +267,9 @@ nav {
     }
 
     .intro-p-form {
-      margin-top: 51px;
-      margin-left: 500px;
-      margin-right: 500px;
+      margin: auto;
       height: 80px;
-      width: 792px;
+      width: 795px;
       color: #252b38;
       font-family: Helvetica;
       font-size: 19px;
@@ -258,21 +278,34 @@ nav {
       letter-spacing: normal;
       line-height: normal;
       text-align: left;
+      text-align: justify;
+      text-justify: inter-word;
     }
 
     .form {
       display: flex;
       flex-direction: column;
-      width: 792px;
+      width: 795px;
       margin-top: 98px;
+      margin-left: 25%;
+
+      input{
+        color: black;
+      }
+
+      input[type="text"] {
+        color: #000000;
+        background-color: black;
+        z-index: 4000;
+      }
 
       .label {
+        margin-left: 10%;
         margin-top: 44px;
-        margin-left: 520px;
         width: 350px;
         height: 22px;
         margin-bottom: 15px;
-        color: #252a37;
+        color: #252a37 !important;
         font-family: Helvetica;
         font-size: 23px;
         font-weight: 700;
@@ -283,14 +316,15 @@ nav {
       }
 
       .field {
-        margin-left: 500px;
+        margin-left: 10%;
         width: 793px;
         height: 62px;
         border-radius: 22px;
         background-color: #171b26;
         opacity: 0.1;
-        color: #ffffff;
+        color: #252a37;
         justify-content: center;
+        font-size: 24px;
       }
 
     }
@@ -369,18 +403,31 @@ nav {
       flex-direction: column;
       margin-left: 171px;
       margin-top: 5%;
+
+      @media (max-width: 375px) {
+        width: 375px;
+        margin-left: 0;
+      }
   
       .features {
         display: flex;
         flex-direction: row;
         list-style: none;
         margin-left: 125px;
+
+        @media (max-width: 375px) {
+          margin-left: 0;
+        }
   
         .feature {
           display: flex;
           flex-direction: row;
           margin-bottom: 5%;
           margin-right: 259px;
+
+          @media (max-width: 375px) {
+            margin-right: 0;
+          }
   
           .feature-logo {
             color: #ffffff;
@@ -534,11 +581,20 @@ nav {
   display: flex;
   flex-direction: column;
 
+  @media (max-width: 375px) {
+    display: 375px;
+  }
+
   .section-coloured {
     display: flex;
     flex-direction: column;
     background-color: #282e41;
 
+    @media (max-width: 375px) { 
+      margin: auto;
+      width: 375px;
+    }
+    
     .title {
       /* Style for "Companies" */
       margin-top: 171px;
@@ -556,7 +612,7 @@ nav {
 
     .title-home {
       margin-top: 400px;
-      margin-bottom: 60px;
+      margin-bottom: 85px;
       margin-left: 81px;
       width: 746px;
       height: 181px;
@@ -569,12 +625,31 @@ nav {
       line-height: normal;
       text-align: left;
       
+      @media (max-width: 375px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 35px !important;
+        margin-top: 75px;
+        margin-bottom: 60px;
+        
+        width: 375px;
+        height: 181px;
+        color: #ffffff;
+        font-family: Helvetica;
+        font-size: 24px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+      }
     }
 
     .intro-p-home {
       margin-left: 81px;
-      margin-top: 37px;
-      width: 747px;
+      margin-top: -50px;
+      width: 740px;
       height: 83px;
       color: #ffffff;
       font-family: Helvetica;
@@ -584,6 +659,21 @@ nav {
       letter-spacing: normal;
       line-height: normal;
       text-align: left;
+
+      @media (max-width: 375px) {
+        display: flex;
+        margin-left: 15px !important;
+        width: 350px !important;
+        font-family: Helvetica;
+        font-size: 15px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        text-align: justify;
+        text-justify: inter-word;
+      }
     }
 
     .get-funded {
@@ -594,6 +684,7 @@ nav {
       border-radius: 30px;
       background-color: #e22f6b;
       color: #ffffff;
+      cursor: pointer;
 
       .txt {
         width: 114px;
@@ -624,6 +715,10 @@ nav {
      border-radius: 0 0 0 500px;
      -moz-border-radius: 0 0 0 500px;
      -webkit-border-radius: 0 0 0 500px;
+
+     @media (max-width: 375px) {
+       display: none;
+     }
     }
 
     .ellipse-2 {
@@ -639,6 +734,10 @@ nav {
      border-radius: 0 0 0 650px;
      -moz-border-radius: 0 0 0 650px;
      -webkit-border-radius: 0 0 0 650px;
+
+     @media (max-width: 375px) {
+        display: none;
+      }
     }
 
     .ellipse-3 {
@@ -654,6 +753,10 @@ nav {
      border-radius: 0 0 0 750px;
      -moz-border-radius: 0 0 0 760px;
      -webkit-border-radius: 0 0 0 750px;
+
+     @media (max-width: 375px) {
+        display: none;
+      }
     }
 
     .laptop-img {
@@ -662,7 +765,11 @@ nav {
       height: 1000px;
 
       top: 50px !important;
-      left: 61% !important;
+      left: 62% !important;
+
+      @media (max-width: 375px) {
+        display: none;
+      }
     }
 
     .intro-p {
@@ -687,6 +794,10 @@ nav {
     flex-direction: column;
     background-color: #282e41;
 
+    @media (max-width: 375px) {
+      width: 375px;
+    }
+
     .title {
       /* Style for "Companies" */
       margin-top: 371px;
@@ -700,6 +811,11 @@ nav {
       letter-spacing: normal;
       line-height: normal;
       text-align: center;
+
+      @media (max-width: 375px) {
+        font-size: 36px;
+        margin-top: 200px;
+      }
     }
 
     .title-home {
@@ -814,6 +930,7 @@ nav {
 
     .intro-p {
       /* Style for "Lorem ipsu" */
+      margin-top: 82px;
       margin-left: 225px;
       height: 64px;
       width: 1475px;
@@ -826,6 +943,15 @@ nav {
       line-height: normal;
       text-align: justifyCenter;
 
+      @media (max-width: 375px) {
+        
+        margin-top: 25px;
+        margin-left: 18px;
+        font-size: 16px;
+        width: 340px;
+        text-align: justify;
+        text-justify: inter-word;
+      }      
     }
   }
 
@@ -846,10 +972,14 @@ nav {
       line-height: normal;
       text-align: center;
       /* Text style for "Companies" */
+
+      @media (max-width: 375px) {
+        font-size: 36px;
+      }
     }
 
     .intro-p {
-      /* Style for "Lorem ipsu" */
+      margin-top: 82px;
       margin-left: 225px;
       height: 64px;
       width: 1475px;
@@ -860,31 +990,111 @@ nav {
       font-style: normal;
       letter-spacing: normal;
       line-height: normal;
-      text-align: justifyCenter;
-      /* Text style for "Lorem ipsu" */
+      text-align: left;
+
+      
+
+      
+    }
+
+    .intro-p-company {
+      margin-top: 82px;
+      margin-left: 25%;
+      margin-right: 25%;
+      height: 64px;
+      width: 1475px;
+      color: #252b38;
+      font-family: Helvetica;
+      font-size: 19px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+      justify-content: center;
+
+      @media (max-width: 375px) {
+        width: 375px;
+        margin-top: 25px;
+        margin-left: 15px;
+        font-size: 16px;
+        width: 340px;
+        text-align: justify;
+        margin-bottom: 100px;
+      }
+    }
+
+    .intro-p-team {
+      margin-top: 82px;
+      margin-left: 225px;
+      height: 64px;
+      width: 1550px;
+      color: #252b38;
+      font-family: Helvetica;
+      font-size: 19px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+      justify-content: center;
+      text-align: justify;
+      text-justify: inter-word;
+
+      @media (max-width: 375px) {
+        width: 375px;
+        margin-top: 25px;
+        margin-left: 15px;
+        font-size: 16px;
+        width: 340px;
+        text-align: justify;
+      }
     }
 
     .companies-list {
       display: flex;
       flex-direction: column;
-      margin-left: 80px; 
+      margin-left: 80px;
       margin-right: 80px;
+      margin-top: 25px;
+
+      @media (max-width: 375px) {
+        margin-left: 0;
+        margin-right: 0;
+      }
       .c-list {
         display: flex;
         flex-direction: row;
         list-style: none;
-        justify-content: space-around;
+        justify-content: center;
+
+        @media (max-width: 375px) {
+          flex-direction: column;
+          padding-left: 0 !important;
+        }
 
         .card {
           width: 475px;
           height: 251px;
           border-radius: 12px;
           background-color: #252b39;
+          margin-right: 43px;
+          margin-left: 43px;
+
+          @media (max-width: 375px) {
+            width: 350px;
+            margin-left: 12px;
+            margin-bottom: 25px;
+          }
 
           .card-content {
             display: flex;
             flex-direction: column;
             margin-left: 52px;
+
+            @media (max-width: 375px) {
+              margin-left: 19px;
+            }            
             
             .card-date {
               margin-left: 360px;
@@ -902,6 +1112,10 @@ nav {
               letter-spacing: normal;
               line-height: normal;
               text-align: right;
+
+              @media (max-width: 375px) {
+                margin-left: 280px;
+              } 
             }
 
             .card-company-type {
@@ -948,7 +1162,11 @@ nav {
               font-style: normal;
               letter-spacing: normal;
               line-height: normal;
-              text-align: justifyCenter;
+              text-align: left;
+
+              @media (max-width: 375px) {
+                width: 320px;
+              } 
             }
 
             .rectangle {
@@ -968,12 +1186,27 @@ nav {
       flex-direction: column;
       margin-left: 80px; 
       margin-right: 80px;
+
+      @media (max-width: 375px) {
+        width: 375px;
+        margin-left: 0px; 
+        margin-right: 0px;
+      }
+
       .c-list {
         display: flex;
         flex-direction: row;
         list-style: none;
         justify-content: space-around;
-        margin-bottom: 20%;
+        margin-top: 182px;
+        margin-bottom: 382px;
+
+        @media (max-width: 375px) {
+          padding-left: 0;
+          flex-direction: column;
+          margin-bottom: 200px;
+          
+        }
 
         .card {
           width: 475px;
@@ -981,11 +1214,25 @@ nav {
           border-radius: 12px;
           background-color: #ffffff;
 
+          @media (max-width: 375px) {
+            width: 350px;
+            height: 451px;
+          }
+
           .card-content {
             display: flex;
             flex-direction: column;
             margin-left: 52px;
-            
+
+            @media (max-width: 375px) {
+              margin-left: 12.5px;
+            }
+
+            img {
+              height: 350px;
+              width: 350px;
+            }
+
             .card-date {
               margin-left: 360px;
               margin-right: 28px;
@@ -1030,6 +1277,10 @@ nav {
               letter-spacing: normal;
               line-height: normal;
               text-align: left;
+
+              @media (max-width: 375px) {
+                font-size: 24px;
+              }
             }
   
             .card-company-description {
@@ -1039,12 +1290,16 @@ nav {
               opacity: 0.46;
               color: #000000;
               font-family: Helvetica;
-              font-size: 15px;
+              font-size: 24px;
               font-weight: 300;
               font-style: normal;
               letter-spacing: normal;
               line-height: normal;
-              text-align: justifyCenter;
+              text-align: left;
+
+              @media (max-width: 375px) {
+                font-size: 18px;
+              }
             }
 
             .rectangle {
@@ -1060,69 +1315,275 @@ nav {
 
   }
 
-  .strategy-list {
-    display: flex;
-    flex-direction: column;
-    margin-left: 171px;
-    margin-top: 5%;
+  
+    .strategy-list {
 
-    .features {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
+      @media (max-width: 375px) {
+        display: none;
+      }
 
-      .feature {
+      @media (min-width: 376px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: 171px;
+        margin-top: 5%;
+    
+        @media (max-width: 375px) {
+          width: 375px;
+          margin-left: 0;
+        }
+    
+        .features {
+          display: flex;
+          flex-direction: row;
+          list-style: none;
+    
+          @media (max-width: 375px) {
+            padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+    
+          .feature {
+            display: flex;
+            flex-direction: row;
+            margin-right: 15%;
+            margin-bottom: 5%;
+    
+            @media (max-width: 375px) {
+              flex-direction: column;
+              margin-top: 25%;
+            }
+    
+            .feature-logo {
+              color: #ffffff;
+              width: 121px;
+              height: 121px;
+    
+              @media (max-width: 375px) {
+                margin: auto;
+              }
+            }
+    
+            .feature-details {
+              display: flex;
+              flex-direction: column;
+              width: 400px;
+    
+              @media (max-width: 375px) {
+                width: 375px;
+              }
+    
+              .feature-title {
+                margin-left: 50px;
+                display: flex;
+                width: 383px;
+                height: 41px;
+                color: #e22f6b;
+                font-family: Helvetica;
+                font-size: 43px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+                text-align: left;
+    
+                @media (max-width: 375px) {
+                  margin-top: 25px;
+                  margin-left: 0px;
+                  font-size: 18px;
+                  justify-content: center;
+                }
+              }
+    
+              .feature-description {
+                margin-left: 50px;
+                margin-top: 75px;
+                width: 450px;
+                height: 106px;
+                opacity: 0.54;
+                color: #ffffff;
+                font-family: Helvetica;
+                font-size: 19px;
+                font-weight: 300;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+                text-align: left;
+    
+                @media (max-width: 375px) {
+                  margin-top: 20px;
+                  margin-left: 25px;
+                  width: 350px;
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+      
+    }
+  
+
+    .strategy-list-mobile {
+      @media (min-width: 376px) { 
+        display: none;
+      } 
+
+      @media (max-width: 375px) { 
+        display: flex;
+      flex-direction: column;
+      margin-left: 171px;
+      margin-top: 5%;
+  
+      @media (max-width: 375px) {
+        width: 375px;
+        margin-left: 0;
+      }
+  
+      .features {
         display: flex;
         flex-direction: row;
-        margin-right: 15%;
-        margin-bottom: 5%;
-
-        .feature-logo {
-          color: #ffffff;
-          width: 121px;
-          height: 121px;
+        list-style: none;
+  
+        @media (max-width: 375px) {
+          padding-left: 0;
         }
-
-        .feature-details {
+  
+        .feature {
           display: flex;
-          flex-direction: column;
-          width: 400px;
-
-          .feature-title {
-            margin-left: 50px;
-            display: flex;
-            width: 383px;
-            height: 41px;
-            color: #e22f6b;
-            font-family: Helvetica;
-            font-size: 43px;
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: normal;
-            text-align: left;
+          flex-direction: row;
+          margin-right: 15%;
+          margin-bottom: 5%;
+  
+          @media (max-width: 375px) {
+            flex-direction: column;
+            margin-top: 25%;
           }
-
-          .feature-description {
-            margin-left: 50px;
-            margin-top: 75px;
-            width: 450px;
-            height: 106px;
-            opacity: 0.54;
+  
+          .feature-logo {
             color: #ffffff;
-            font-family: Helvetica;
-            font-size: 19px;
-            font-weight: 300;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: normal;
-            text-align: left;
+            width: 121px;
+            height: 121px;
+  
+            @media (max-width: 375px) {
+              margin: auto;
+            }
+          }
+  
+          .feature-details {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+  
+            @media (max-width: 375px) {
+              width: 375px;
+            }
+  
+            .feature-title {
+              margin-left: 50px;
+              display: flex;
+              width: 383px;
+              height: 41px;
+              color: #e22f6b;
+              font-family: Helvetica;
+              font-size: 43px;
+              font-weight: 400;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: normal;
+              text-align: left;
+  
+              @media (max-width: 375px) {
+                margin-top: 25px;
+                margin-left: 15px;
+                font-size: 28px;
+                justify-content: center;
+                width: 350px;
+                text-align: center;
+              }
+            }
+
+            .feature-title-last {
+              margin-left: 50px;
+              display: flex;
+              width: 383px;
+              height: 41px;
+              color: #e22f6b;
+              font-family: Helvetica;
+              font-size: 43px;
+              font-weight: 400;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: normal;
+              text-align: left;
+  
+              @media (max-width: 375px) {
+                margin-top: 25px;
+                margin-left: 15px;
+                margin-bottom: 15px;
+                font-size: 28px;
+                justify-content: center;
+                width: 350px;
+                text-align: center;
+              }
+            }
+  
+            .feature-description {
+              margin-left: 50px;
+              margin-top: 75px;
+              width: 450px;
+              height: 106px;
+              opacity: 0.54;
+              color: #ffffff;
+              font-family: Helvetica;
+              font-size: 19px;
+              font-weight: 300;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: normal;
+              text-align: left;
+  
+              @media (max-width: 375px) {
+                margin-top: 20px;
+                margin-left: 35px;
+                width: 350px;
+                font-size: 15px;
+                height: 0;
+              }
+            }
+
+            .feature-description-last {
+              margin-left: 50px;
+              margin-top: 75px;
+              width: 450px;
+              height: 106px;
+              opacity: 0.54;
+              color: #ffffff;
+              font-family: Helvetica;
+              font-size: 19px;
+              font-weight: 300;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: normal;
+              text-align: left;
+  
+              @media (max-width: 375px) {
+                margin-top: 20px;
+                margin-left: 35px;
+                width: 350px;
+                font-size: 15px;
+              }
+            }
           }
         }
       }
     }
   }
 }
+      
+  
 
 /*Middle section ends*/
 
@@ -1132,11 +1593,55 @@ footer {
   display: flex;
   flex-direction: column;
 
+
   .rectangle-2 {
     height: 515px;
     background-color: #252a37 !important;
     display: flex;
     flex-direction: row;
+
+    @media (max-width: 375px) {
+      flex-direction: column;
+    } 
+
+    a {
+      text-decoration: none;
+    }
+
+    .get-funded {
+      padding-top: 5px;
+      margin-top: 35%;
+      margin-left: 220px;
+      justify-content: center;
+      width: 252px;
+      height: 59px;
+      border-radius: 30px;
+      background-color: #e22f6b;
+      color: #ffffff;
+      cursor: pointer;
+
+      @media (max-width: 375px) {
+        margin-top: 100px;
+        margin-left: 75px;
+      } 
+
+      .txt {
+        width: 114px;
+        height: 17px;
+        color: #ffffff;
+        font-family: Helvetica;
+        font-size: 23px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: center;
+        margin: auto !important;
+        margin-top: 20px !important;
+      }
+    }
+
+    
 
     .foot-links {
       margin-top: 97px;
@@ -1166,8 +1671,13 @@ footer {
       display: flex;
       width: 197px;
       height: 197px;
-      margin-left: 40%;
+      margin-left: 58%;
       margin-top: 7% !important;
+
+      @media (max-width: 375px) {
+        margin-top: 15% !important;
+        margin-left: 105px;
+      } 
     }
   }
 

@@ -15,7 +15,7 @@ function Apply() {
         <div className="apply-sections">
          <div id="home" className="apply-section-coloured">
             <div className="title-home">Apply to MLTPLY Partners</div>
-            <p className="intro-p-home">Omni, Albo and 30+ startups from our portfolio got funding via this application</p> 
+            <p className="intro-p-home">Aimed at seed-stage companies that are solving small businesses’ and consumers’ protection and insurance needs in areas of property and casualty, MLTPLY will place a special focus on companies where technology and coverage are key areas of innovation, including telematics, new data, new markets, complex markets, and non-admitted offerings that need technology scale.</p> 
 
             <span className="ellipse"></span>
             <span className="ellipse-2"></span>
@@ -30,7 +30,7 @@ function Apply() {
                     <li className="feature">
                         <img src={feature} className="feature-logo"></img>
                         <div className="feature-details">
-                            <div className="feature-description"><p>You shouldn't need a warm intro to access venture capital. Our Magma Memo democratizes access to venture capital and is the best way to get in touch with us. Don't spend more than 5-10 minutes on it. Bullet points are just fine.</p><p>Your Magma Memo helps us be ready for a first meeting by getting to know you and your business so that we can dig in during our first meeting.</p></div>
+                            <div className="feature-description"><p>You shouldn't need a warm intro to access venture capital. Our Magma Memo democratizes access to venture capital and is the best way to get in touch with us. Don't spend more than 5-10 minutes on it. Bullet points are just fine.</p><p>This helps us be ready for a first meeting by getting to know you and your business so that we can dig in during our first meeting.</p></div>
                         </div>
                     </li>
                 </ul>
@@ -50,7 +50,7 @@ function Apply() {
                         <img src={big_markets} className="feature-logo"></img>
                         <div className="feature-details">
                             <div className="feature-title">Big Markets, Scalable Growth</div>
-                            <div className="feature-description">We want to understand how you can build a fast growth, scalable, technology driven business with $25M-$100M+ of revenue over the next 5-10 years.</div>
+                            <div className="feature-description">We want to understand how you can build a fast growth, scalable, technology-driven insurtechs at the seed or early funding stage.</div>
                         </div>
                     </li>
 

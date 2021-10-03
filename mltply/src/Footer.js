@@ -1,12 +1,16 @@
 import React from 'react'
 import './App.scss';
+import {Link as LinkTo} from 'react-router-dom';
 import logo_footer from './images/Vector_Smart_Object_copy.svg';
+
 
 function Footer() {
     return (
         <footer>
             <div className="rectangle-2">
-                <ul className="foot-links">
+            <LinkTo to="apply"><div className="get-funded"><p className="txt">Get funded</p></div></LinkTo>
+
+                {/* <ul className="foot-links">
                     <li>Apply</li>
                     <li>Portfolio</li>
                     <li>Team</li>
@@ -19,7 +23,7 @@ function Footer() {
                     <li>LatamList Espresso</li>
                     <li>Lorem ipsum</li>
                     <li>Dolor sit amet</li>
-                </ul>
+                </ul> */}
                 <img src={logo_footer} className="img-footer" ></img>
             </div>
             <div className="rectangle-3"></div>
