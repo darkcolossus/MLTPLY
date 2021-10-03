@@ -33,16 +33,16 @@ function MiddleSection() {
                     <li className="feature">
                         <img src={v1} className="feature-logo"></img>
                         <div className="feature-details">
-                            <div className="feature-title">Comercial Fleet</div>
-                            <div className="feature-description">Provide services for consumers or busineses utilizing new types of mobility, vehicle, connectiviy and telematics.</div>
+                            <div className="feature-title">Commercial Fleet & Modern Mobility</div>
+                            <div className="feature-description">Provide services for consumers or businesses utilizing new types of mobility, vehicle, connectivity and telematics.</div>
                         </div>
                     </li>
 
                     <li className="feature">
                         <img src={v2} className="feature-logo"></img>
                         <div className="feature-details">
-                            <div className="feature-title">Cyber security and risk</div>
-                            <div className="feature-description">Protect businesses and consumes from new and evolving digital exposures, risks, and attacks by inventing new platforms or reenginering existing products that seamlessly solve for novel 21st century challenges.</div>
+                            <div className="feature-title">Digital Risk Exposure - Cyber + others</div>
+                            <div className="feature-description">Protect businesses and consumers from new and evolving digital risks and attacks by delivery modern platforms capable of proactive protection.</div>
                         </div>
                     </li>
                 </ul>
@@ -59,8 +59,8 @@ function MiddleSection() {
                     <li className="feature">
                         <img src={v1} className="feature-logo"></img>
                         <div className="feature-details">
-                            <div className="feature-title">Home</div>
-                            <div className="feature-description">Assist our members in better protecting and managing their most valuable assets through alternative data and analytics, risk intervention technologies, and home services solutions.</div>
+                            <div className="feature-title">Property</div>
+                            <div className="feature-description">Helping consumers and Businesses protect and manage their most valuable assets through alternative coverage, data and other offerings in the homeowner and BOP space.</div>
                         </div>
                     </li>
                 </ul>
@@ -69,8 +69,8 @@ function MiddleSection() {
                     <li className="feature">
                         <img src={v2} className="feature-logo"></img>
                         <div className="feature-details">
-                            <div className="feature-title">Living in retirement</div>
-                            <div className="feature-description">Deliver products and services to help consumers prepare for and live better in their next stage of life.</div>
+                            <div className="feature-title">Complex Insurance Needs</div>
+                            <div className="feature-description">Deliver product and services to help consumer protect assets in areas where coverage is difficult to find like coastal property and flood risk areas.</div>
                         </div>
                     </li>
 
@@ -92,8 +92,8 @@ function MiddleSection() {
                     <li className="feature">
                         <img src={v1} className="feature-logo"></img>
                         <div className="feature-details">
-                            <div className="feature-title">Comercial Fleet</div>
-                            <div className="feature-description">Provide services for consumers or busineses utilizing new types of mobility, vehicle, connectiviy and telematics.</div>
+                            <div className="feature-title-1">Commercial Fleet & Modern Mobility</div>
+                            <div className="feature-description-1">Provide services for consumers or businesses utilizing new types of mobility, vehicle, connectivity and telematics.</div>
                         </div>
                     </li>
                 </ul>
@@ -102,8 +102,8 @@ function MiddleSection() {
                     <li className="feature">
                             <img src={v2} className="feature-logo"></img>
                             <div className="feature-details">
-                                <div className="feature-title">Cyber security and risk</div>
-                                <div className="feature-description">Protect businesses and consumes from new and evolving digital exposures, risks, and attacks by inventing new platforms or reenginering existing products that seamlessly solve for novel 21st century challenges.</div>
+                                <div className="feature-title-1">Digital Risk Exposure - Cyber + others</div>
+                                <div className="feature-description-1">Protect businesses and consumers from new and evolving digital risks and attacks by delivery modern platforms capable of proactive protection.</div>
                             </div>
                     </li>
                 </ul>
@@ -113,7 +113,7 @@ function MiddleSection() {
                         <img src={v3} className="feature-logo"></img>
                         <div className="feature-details">
                             <div className="feature-title">Digital Infrastructure</div>
-                            <div className="feature-description">Invest in the advancing infrastructure behind the insurance and financial services industries in the areas of underwriting, data & analytics, IoT, alternative distribution and more.</div>
+                            <div className="feature-description-1">Invest in the advancing infrastructure behind the insurance and financial services industries in the areas of underwriting, data & analytics, IoT, alternative distribution and more.</div>
                         </div>
                     </li>
                 </ul>
@@ -122,8 +122,8 @@ function MiddleSection() {
                     <li className="feature">
                         <img src={v1} className="feature-logo"></img>
                         <div className="feature-details">
-                            <div className="feature-title">Home</div>
-                            <div className="feature-description">Assist our members in better protecting and managing their most valuable assets through alternative data and analytics, risk intervention technologies, and home services solutions.</div>
+                            <div className="feature-title">Property</div>
+                            <div className="feature-description-1">Helping consumers and Businesses protect and manage their most valuable assets through alternative coverage, data and other offerings in the homeowner and BOP space.</div>
                         </div>
                     </li>
                 </ul>
@@ -132,8 +132,8 @@ function MiddleSection() {
                     <li className="feature">
                         <img src={v2} className="feature-logo"></img>
                         <div className="feature-details">
-                            <div className="feature-title">Living in retirement</div>
-                            <div className="feature-description">Deliver products and services to help consumers prepare for and live better in their next stage of life.</div>
+                            <div className="feature-title">Complex Insurance Needs</div>
+                            <div className="feature-description-1"> Deliver product and services to help consumer protect assets in areas where coverage is difficult to find like coastal property and flood risk areas.</div>
                         </div>
                     </li>
                 </ul>
@@ -158,8 +158,8 @@ function MiddleSection() {
                 <ul className="c-list">
                     <li className="card">
                         <div className="card-content">
-                            <div className="card-date">2020</div>
-                            <div className="card-company-type">Fintech</div>
+                            <div className="card-date">2021</div>
+                            <div className="card-company-type">Insurtech</div>
                             <div className="card-company-name">Pouch</div>
                             <div className="card-company-description">Small Business Commercial Auto with Free vehicle tracking software. Better coverages and better protection for fleets under 10 vehicles.</div>
                         </div>
@@ -167,8 +167,8 @@ function MiddleSection() {
 
                     <li className="card">
                         <div className="card-content">
-                                <div className="card-date">2020</div>
-                                <div className="card-company-type">Fintech</div>
+                                <div className="card-date">2021</div>
+                                <div className="card-company-type">Insurtech</div>
                                 <div className="card-company-name">Viva Seguros</div>
                                 <div className="card-company-description">Latino first brand focused on delivering the next generation of personal lines insurance.</div>
                             </div>
@@ -225,7 +225,7 @@ function MiddleSection() {
                         <div className="card-content">
                             <img src={gloria} />
                             <div className="card-company-name">Gloria Guntinas</div>
-                            <div className="card-company-description">Founder & CEO.</div>
+                            <div className="card-company-description">Founder & CEO</div>
                         </div>
                         
 
@@ -234,7 +234,7 @@ function MiddleSection() {
                     <div className="card-content">
                             <img src={steve} />
                             <div className="card-company-name">Steve McKay</div>
-                            <div className="card-company-description">Co-Founder & Investment Advisor.</div>
+                            <div className="card-company-description">Co-Founder & Investment Advisor</div>
                         </div>
                     </li>
 
@@ -242,7 +242,7 @@ function MiddleSection() {
                     <div className="card-content">
                             <img src={tom} />
                             <div className="card-company-name">Tom Libassi</div>
-                            <div className="card-company-description">ILS Capital Management.</div>
+                            <div className="card-company-description">ILS Capital Management</div>
                         </div>
                     </li>
                 </ul>

@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+
+  @media (max-width: 375px) {
+    width: 375px;
+  }
 }
 
 nav {
@@ -15,6 +19,8 @@ nav {
 
     @media (max-width: 375px) {
       margin-left: 45px;
+      
+
     }
   }
 
@@ -154,7 +160,7 @@ nav {
         line-height: normal;
         text-align: center;
         margin: auto !important;
-        margin-top: 20px !important;
+        
       }
     }
 
@@ -582,7 +588,7 @@ nav {
   flex-direction: column;
 
   @media (max-width: 375px) {
-    display: 375px;
+    width: 375px;
   }
 
   .section-coloured {
@@ -611,7 +617,7 @@ nav {
     }
 
     .title-home {
-      margin-top: 400px;
+      margin-top: 270px;
       margin-bottom: 85px;
       margin-left: 81px;
       width: 746px;
@@ -633,7 +639,7 @@ nav {
         margin-top: 75px;
         margin-bottom: 60px;
         
-        width: 375px;
+        width: 335px;
         height: 181px;
         color: #ffffff;
         font-family: Helvetica;
@@ -698,19 +704,20 @@ nav {
         line-height: normal;
         text-align: center;
         margin: auto !important;
-        margin-top: 20px !important;
+        margin-top: 17px !important;
+        margin-left: 50px !important;
       }
     }
 
     .ellipse {
       position: absolute;
-      width: 500px;
+      width: 498px;
       height: 500px;
       background-color: #f02f6e;
       opacity: 0.74;
 
       top: 0px !important;
-      left: 73% !important;
+      left: 72.75% !important;
 
      border-radius: 0 0 0 500px;
      -moz-border-radius: 0 0 0 500px;
@@ -723,13 +730,13 @@ nav {
 
     .ellipse-2 {
       position: absolute;
-      width: 650px;
+      width: 730px;
       height: 650px;
       background-color: #f02f6e;
       opacity: 0.49;
 
       top: 0px !important;
-      left: 65% !important;
+      left: 60% !important;
 
      border-radius: 0 0 0 650px;
      -moz-border-radius: 0 0 0 650px;
@@ -742,13 +749,13 @@ nav {
 
     .ellipse-3 {
       position: absolute;
-      width: 800px;
+      width: 850px;
       height: 800px;
       background-color: #f02f6e;
       opacity: 0.30;
 
       top: 0px !important;
-      left: 58% !important;
+      left: 53.5% !important;
 
      border-radius: 0 0 0 750px;
      -moz-border-radius: 0 0 0 760px;
@@ -761,11 +768,11 @@ nav {
 
     .laptop-img {
       position: absolute;
-      width: 800px;
+      width: 594px;
       height: 1000px;
 
       top: 50px !important;
-      left: 62% !important;
+      left: 67.5% !important;
 
       @media (max-width: 375px) {
         display: none;
@@ -800,7 +807,7 @@ nav {
 
     .title {
       /* Style for "Companies" */
-      margin-top: 371px;
+      margin-top: 420px;
       height: 55px;
       color: #ffffff;
       color: #ffffff;
@@ -931,7 +938,7 @@ nav {
     .intro-p {
       /* Style for "Lorem ipsu" */
       margin-top: 82px;
-      margin-left: 225px;
+      margin-left: 180px;
       height: 64px;
       width: 1475px;
       color: #ffffff;
@@ -941,7 +948,7 @@ nav {
       font-style: normal;
       letter-spacing: normal;
       line-height: normal;
-      text-align: justifyCenter;
+      text-align: left;
 
       @media (max-width: 375px) {
         
@@ -999,8 +1006,8 @@ nav {
 
     .intro-p-company {
       margin-top: 82px;
-      margin-left: 25%;
-      margin-right: 25%;
+      margin-left: 180px;
+      margin-right: 225px;
       height: 64px;
       width: 1475px;
       color: #252b38;
@@ -1014,9 +1021,10 @@ nav {
       justify-content: center;
 
       @media (max-width: 375px) {
-        width: 375px;
+        width: 350px;
         margin-top: 25px;
         margin-left: 15px;
+        margin-right: 15px;
         font-size: 16px;
         width: 340px;
         text-align: justify;
@@ -1026,9 +1034,9 @@ nav {
 
     .intro-p-team {
       margin-top: 82px;
-      margin-left: 225px;
+      margin-left: 180px;
       height: 64px;
-      width: 1550px;
+      width: 1475px;
       color: #252b38;
       font-family: Helvetica;
       font-size: 19px;
@@ -1036,7 +1044,7 @@ nav {
       font-style: normal;
       letter-spacing: normal;
       line-height: normal;
-      text-align: left;
+      text-align: center;
       justify-content: center;
       text-align: justify;
       text-justify: inter-word;
@@ -1377,7 +1385,7 @@ nav {
               .feature-title {
                 margin-left: 50px;
                 display: flex;
-                width: 383px;
+                width: 420px;
                 height: 41px;
                 color: #e22f6b;
                 font-family: Helvetica;
@@ -1480,6 +1488,30 @@ nav {
             @media (max-width: 375px) {
               width: 375px;
             }
+
+            .feature-title-1 {
+              @media (max-width: 375px) {
+                margin-left: 50px;
+                display: flex;
+                width: 383px;
+                height: 41px;
+                color: #e22f6b;
+                font-family: Helvetica;
+                font-size: 43px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+                text-align: left;
+                margin-top: 25px;
+                margin-left: 15px;
+                margin-bottom: 30px;
+                font-size: 28px;
+                justify-content: center;
+                width: 350px;
+                text-align: center;
+              }
+            }
   
             .feature-title {
               margin-left: 50px;
@@ -1522,7 +1554,7 @@ nav {
               @media (max-width: 375px) {
                 margin-top: 25px;
                 margin-left: 15px;
-                margin-bottom: 15px;
+                margin-bottom: 20px;
                 font-size: 28px;
                 justify-content: center;
                 width: 350px;
@@ -1530,6 +1562,30 @@ nav {
               }
             }
   
+            .feature-description-1 {
+              margin-left: 50px;
+              margin-top: 75px;
+              width: 450px;
+              height: 106px;
+              opacity: 0.54;
+              color: #ffffff;
+              font-family: Helvetica;
+              font-size: 19px;
+              font-weight: 300;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: normal;
+              text-align: left;
+  
+              @media (max-width: 375px) {
+                margin-top: 20px;
+                margin-left: 20px;
+                width: 350px;
+                font-size: 15px;
+                height: 0;
+              }
+            }
+
             .feature-description {
               margin-left: 50px;
               margin-top: 75px;
@@ -1571,7 +1627,7 @@ nav {
   
               @media (max-width: 375px) {
                 margin-top: 20px;
-                margin-left: 35px;
+                margin-left: 20px;
                 width: 350px;
                 font-size: 15px;
               }
@@ -1637,7 +1693,8 @@ footer {
         line-height: normal;
         text-align: center;
         margin: auto !important;
-        margin-top: 20px !important;
+        margin-top: 15px !important;
+        margin-left: 70px !important;
       }
     }
 
@@ -1671,7 +1728,7 @@ footer {
       display: flex;
       width: 197px;
       height: 197px;
-      margin-left: 58%;
+      margin-left: 52.5%;
       margin-top: 7% !important;
 
       @media (max-width: 375px) {
